@@ -1,0 +1,33 @@
+.Carousel {
+  font-family: sans-serif;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+.carousel-item {
+  position: relative;
+}
+.carousel-item-name {
+  position: absolute;
+  bottom: 0px;
+  color: black;
+  margin: auto;
+}
+.carousel-item-name {
+  font-size: 14px;
+  padding: 3px 3px;
+  background: rgba(0, 255, 0, 0.5);
+  border-radius: 5px;
+}
+.carousel-btn {
+  /* display: none; */
+  position: absolute;
+  top: 2000px;
+  left: 2000px;
+}
+.carousel-item:hover .carousel-btn {
+  /* position: absolute; */
+  top: 50%;
+  left: 1rem;
+}
