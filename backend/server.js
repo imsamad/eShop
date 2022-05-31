@@ -9,7 +9,8 @@ import productRoutes from './routes/productRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js';
-dotenv.config({ path: './config/.env' });
+const __dirname = path.resolve();
+dotenv.config({ path: path.join(__dirname, 'config', '.env') });
 connectDB();
 
 /*Start API */
@@ -18,7 +19,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 process.env.NODE_ENV === 'development' && app.use(morgan('dev'));
-const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '/uploads')));
 app.use('/api/uploads', uploadRoutes);
 

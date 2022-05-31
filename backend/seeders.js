@@ -10,8 +10,6 @@ dotenv.config({ path: './config/.env' });
 connectDB();
 const importData = async () => {
   try {
-    await User.deleteMany();
-    await Product.deleteMany();
     // await Order.deleteMany()
 
     const createdUser = await User.insertMany(users);
@@ -28,12 +26,12 @@ const importData = async () => {
     process.exit(1);
   }
 };
-// importData()
+
 const destroyData = async () => {
   try {
     await User.deleteMany();
     await Product.deleteMany();
-    //  await Order.deleteMany()
+    await Order.deleteMany();
     console.log('Data Destroyed');
     process.exit();
   } catch (error) {

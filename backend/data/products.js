@@ -1,5 +1,77 @@
 const products = [
   {
+    name: 'Airpods Wireless Bluetooth Headphones',
+    image: '/images/airpods.jpg',
+    description:
+      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 89.99,
+    countInStock: 3,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'iPhone 11 Pro 256GB Memory',
+    image: '/images/phone.jpg',
+    description:
+      'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 599.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'Cannon EOS 80D DSLR Camera',
+    image: '/images/camera.jpg',
+    description:
+      'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
+    brand: 'Cannon',
+    category: 'Electronics',
+    price: 929.99,
+    countInStock: 0,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'Sony Playstation 4 Pro White Version',
+    image: '/images/playstation.jpg',
+    description:
+      'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
+    brand: 'Sony',
+    category: 'Electronics',
+    price: 399.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'Logitech G-Series Gaming Mouse',
+    image: '/images/mouse.jpg',
+    description:
+      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
+    brand: 'Logitech',
+    category: 'Electronics',
+    price: 49.99,
+    countInStock: 7,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'Amazon Echo Dot 3rd Generation',
+    image: '/images/alexa.jpg',
+    description:
+      'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+    brand: 'Amazon',
+    category: 'Electronics',
+    price: 29.99,
+    countInStock: 0,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
     name: 'OnePlus Nord 5G (Gray Onyx, 8GB RAM, 128GB Storage)',
     image: '/images/OnePlusNord5G.jpg',
     description:
@@ -8,11 +80,11 @@ const products = [
     category: 'Smartphone',
     price: 379.99,
     countInStock: 5,
-    rating:3.5,
+    rating: 3.5,
     numReviews: 12,
   },
   {
-    name: 'Allen Solly Men\'s Polo',
+    name: "Allen Solly Men's Polo",
     image: '/images/MenPolo.jpg',
     description:
       'Care Instructions: Wash with mild detergent, do not bleach, dry in shade,Regular Fit,Maroon,60% cotton and 40% polyester,Banded collar,Wash with mild detergent, do not bleach, dry in shade,Plus size available from size XXL onwards',
@@ -27,7 +99,7 @@ const products = [
     name: 'Bon Organik Mickey & Friends',
     image: '/images/mask.jpg',
     description:
-      '100% Polyester Back : Anti microbial 100% Cotton,All masks are made according to WHO guidelines,Each packet is sanitized; Recommended Age Group- 4-8Y Kids,3 Masks; Item Form: Wraps; Target Audience: Unisex;Measurement: 15 x 10 cm,Machine wash cold, Gentle Cycle, Tumble Dry Low , Don\'t Dry Clean Wash before Reusing',
+      "100% Polyester Back : Anti microbial 100% Cotton,All masks are made according to WHO guidelines,Each packet is sanitized; Recommended Age Group- 4-8Y Kids,3 Masks; Item Form: Wraps; Target Audience: Unisex;Measurement: 15 x 10 cm,Machine wash cold, Gentle Cycle, Tumble Dry Low , Don't Dry Clean Wash before Reusing",
     brand: 'OrgPoly',
     category: 'Masks',
     price: 9.99,
@@ -35,7 +107,7 @@ const products = [
     rating: 3,
     numReviews: 12,
   },
-  { 
+  {
     name: 'DELL Inspiron 3493 14-inch Laptopp',
     image: '/images/laptop.jpg',
     description:
@@ -80,13 +152,13 @@ const products = [
     category: 'Home & Kitchen',
     price: 19.99,
     countInStock: 0,
-    rating:3.5,
+    rating: 3.5,
     numReviews: 12,
   },
   {
     name: 'Yonex GR 303 Racket',
     image: '/images/racket.webp',
-    description:`Grip Size : G3 (3.5 Inches)| Weight : 2U(90-95 grams),Color : Black | Head Shape : Isometric,Strung Type : Strung,Playing Level : Intermediate,Material : Aluminum,Saina Nehwal special edition,Low torsion steel shaft, Ideal for beginners and intermediate`,
+    description: `Grip Size : G3 (3.5 Inches)| Weight : 2U(90-95 grams),Color : Black | Head Shape : Isometric,Strung Type : Strung,Playing Level : Intermediate,Material : Aluminum,Saina Nehwal special edition,Low torsion steel shaft, Ideal for beginners and intermediate`,
     brand: 'YONEX',
     category: 'Sport',
     price: 14.99,
@@ -97,7 +169,7 @@ const products = [
   {
     name: 'Elevar Kashmir ',
     image: '/images/bat.webp',
-    description:`Meant for usage with Gloves. Handpicked from top of the line Kashmir willow clefts,Weight: 1175 - 1275 gm,Trademark ergonomic handle, special polyurethane grip and aerodynamic bat shape,Knocked in (500 knocks),Comes with a sleek metallic blue padded bat case`,
+    description: `Meant for usage with Gloves. Handpicked from top of the line Kashmir willow clefts,Weight: 1175 - 1275 gm,Trademark ergonomic handle, special polyurethane grip and aerodynamic bat shape,Knocked in (500 knocks),Comes with a sleek metallic blue padded bat case`,
     brand: 'ELEVAR',
     category: 'Brand',
     price: 929.99,
@@ -108,7 +180,8 @@ const products = [
   {
     name: 'OnePlus Bullets Wireless EarPhone',
     image: '/images/earphone.jpg',
-    description:'Compatible with all smartphones. Charge for 10 minutes, enjoy for 10 hours on your OnePlus Bullets Wireless Z that comes equipped with the Bluetooth v5.0 QCC3024 chipset,The Bullets Wireless Z comes with Warp Charge technology,With convenient features like Quick Switch, Quick Pair and Magnetic Control, listening to your music on your Bullets Wireless Z is a whole new acoustic experience,A massive playtime of up to 20 hours with full charge',
+    description:
+      'Compatible with all smartphones. Charge for 10 minutes, enjoy for 10 hours on your OnePlus Bullets Wireless Z that comes equipped with the Bluetooth v5.0 QCC3024 chipset,The Bullets Wireless Z comes with Warp Charge technology,With convenient features like Quick Switch, Quick Pair and Magnetic Control, listening to your music on your Bullets Wireless Z is a whole new acoustic experience,A massive playtime of up to 20 hours with full charge',
     brand: 'OnePlus',
     category: 'Electronics',
     price: 359.99,
@@ -117,9 +190,10 @@ const products = [
     numReviews: 12,
   },
   {
-    name: 'L,Zard Men\'s Slim Fit Jeans',
+    name: "L,Zard Men's Slim Fit Jeans",
     image: '/images/jeans.jpg',
-    description:'Care Instructions: Machine Wash,Fit Type: Slim,Color name: Black,Material: Denim,Machine Wash',
+    description:
+      'Care Instructions: Machine Wash,Fit Type: Slim,Color name: Black,Material: Denim,Machine Wash',
     brand: 'L.Zard',
     category: 'Clothes',
     price: 49.99,
@@ -139,6 +213,6 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
-]
+];
 
-export default products
+export default products;

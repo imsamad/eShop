@@ -5,7 +5,7 @@
   "main": "backend/server.js",
   "type": "module",
   "scripts": {
-    "bootup": "npm i && cd frontend && npm i",
+    "bootup": "npm ci && cd frontend && npm ci",
     "start": "cd backend && node server",
     "server": "cd backend && nodemon server",
     "client": "cd frontend && npm start",
@@ -30,6 +30,7 @@
     "react-elastic-carousel": "^0.9.5"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0"
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.16"
   }
 }
